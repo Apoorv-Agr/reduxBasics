@@ -1,9 +1,13 @@
-import { BUY_CAKE } from './actionConstants';
+const { BUY_CAKE } = require('./actionConstants');
 
-function buyCake() {
+const buyCakeAction = () => {
     return {
         type: BUY_CAKE,
-        info: 'First Redux Actions'
+        payload: {
+            info: 'First Redux Actions'
+        }
     }
 };
+
+module.exports = { buyCakeAction };
 
