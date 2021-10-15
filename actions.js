@@ -1,13 +1,31 @@
-const { BUY_CAKE } = require('./actionConstants');
+const { BUY_CAKE, SELL_CAKE, BUY_ICE_CREAM } = require('./actionConstants');
 
 const buyCakeAction = () => {
     return {
         type: BUY_CAKE,
         payload: {
-            info: 'First Redux Actions'
+            info: 'Decrease Amount of Cakes'
         }
     }
 };
 
-module.exports = { buyCakeAction };
+const sellCakeAction = () => {
+    return {
+        type: SELL_CAKE,
+        payload: {
+            info: 'Increase Amount of Cakes'
+        }
+    }
+};
+
+const buyIceCream = () => {
+    return {
+        type: BUY_ICE_CREAM,
+        payload: {
+            info: 'Decrease amount of Ice-creams'
+        }
+    }
+}
+
+module.exports = { buyCakeAction, sellCakeAction, buyIceCream };
 

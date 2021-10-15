@@ -1,3 +1,5 @@
 const BUY_CAKE = 'BUY_CAKE';
+const SELL_CAKE = 'SELL_CAKE';
+const BUY_ICE_CREAM = 'BUY_ICE_CREAM';
 
-module.exports = { BUY_CAKE };
+module.exports = { BUY_CAKE, SELL_CAKE,BUY_ICE_CREAM };
